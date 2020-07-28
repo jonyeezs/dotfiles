@@ -18,29 +18,11 @@ function install {
 }
 
 # Basics
-install awscli
-install chrome-gnome-shell
-install chromium-browser
-install curl
-install dialog
-install exfat-utils
-install file
-install git
-install htop
-install nmap
-install openvpn
-install tree
-install vim
-install wget
+sudo add-apt-repository -y ppa:git-core/ppa
+sudo apt -y update
+sudo apt -y install git
 
-# Image processing
-install gimp
-install jpegoptim
-install optipng
-
-# Fun stuff
-install figlet
-install lolcat
+sudo apt -y install build-essential
 
 # Run all scripts in programs/
 for f in programs/*.sh; do bash "$f" -H; done
