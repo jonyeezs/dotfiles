@@ -6,6 +6,15 @@ The [installation script included](https://github.com/victoriadrake/dotfiles/blo
 
 Add or delete files in `scripts/install.sh` and `scripts/programs/` to modify your installation.
 
+
+## Included `scripts/`
+
+- `symlink.sh` sets up symbolic links in `$HOME`
+- `aptinstall.sh` owns Ubuntu repository installs
+- `programs.sh` leverages progressive command line installation of other software
+- `desktop.sh` champions granular executive desktop environment settings
+- `setup.sh` facilitates the scalable and proactive deliverables of running all the scripts and `apt upgrade`
+
 ## Usage
 
 After installing your fresh OS, do:
@@ -24,7 +33,7 @@ You may optionally like to pass the `--depth` argument to clone only a few of th
 
 ```sh
 cd dotfiles/scripts/
-./install.sh
+./setup.sh
 ```
 
 Then restart your terminal to see changes, or run:
